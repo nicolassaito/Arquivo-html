@@ -1,0 +1,102 @@
+body{
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #ffc107;
+    color: #000000;
+    padding: 30px 0;
+    text-align: center;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+   
+   
+}
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+nav ul li a {
+    color: #000000;
+    font-size: 22px;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav ul li a:hover {
+    text-decoration: underline;
+    
+}
+section {
+    padding: 20px;
+    margin: 10px auto;
+    max-width: 1200px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+h2 {
+    color: #1b32b4;
+    font-size: 32px;
+}
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+.produto {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: center;
+    background: #fff;
+}
+.produto img {
+    width: 100%;
+    height: auto;
+}
+.produto h3 {
+    margin: 10px 0;
+}
+footer {
+    text-align: center;
+    font-size: 20px;
+    padding: 19px 0;
+    background: #333;
+    color: #fff;
+}
+
+h3{
+    font-size: 31px;
+    color:#000000;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+.texto {
+    font-family: Georgia, 'Times New Roman', Times, serif;  
+    padding: 30px; 
+    position: relative; 
+    left: 90px; 
+    margin-right: 90px;
+}
+
+h4 {
+    font-family:'Lucida Grande', 'Lucida Sans', sans-serif;
+    font-size: 21px;
+    color:#7d0808;
+    line-height: 30px;
+    text-align: center;
+
+}
+.gpt{
+    font-size: 20px;
+}

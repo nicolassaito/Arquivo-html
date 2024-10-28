@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperos da Vida</title>
+    <link rel="icon" href="apple.png" type="png">
+    <link rel="stylesheet" href="estolilou.css">
+    
+
+</head>
+<body>
+   
+    <!-- Cabeçalho -->
+    <header>
+        <nav>
+        
+            <h1>Temperos da Vida</h1><br>
+            <ul>
+                <li><a href="home.html" class="dropdown-item">Home</a></li>
+                <li><a href="sobre_nos.html" class="dropdown-item">Sobre Nós</a></li>
+                <li><a href="produtos.html" class="dropdown-item">Produtos</a></li>
+                <li><a href="receitas.html" class="dropdown-item">Receitas</a></li>
+                <li><a href="sustentabilidade.html">Sustentabilidade</a></li>
+                <li><a href="contato.html" class="dropdown-item">Contato</a></li>
+                <li><a href="cliente.html" class="dropdown-item">Área do Cliente</a></li>
+                <li><a href="faq.html" class="dropdown-item">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="banner">
+        <div class="banner-content">
+            <h1 class="fade-in">Tempero da Vida</h1>
+            <p class="fade-in">Sabor e frescor direto da natureza</p>
+            <p class="description fade-in">Descubra nossa variedade de temperos, ervas e produtos frescos que transformam suas receitas em experiências inesquecíveis.</p>
+            <a href="produtos.html" class="cta-button fade-in">Explore Nossos Produtos</a>
+        </div>
+    </section>
+    
+    <style>
+        #banner {
+            position: relative;
+            width: 100%;
+            height: 400px; /* Ajuste a altura conforme necessário */
+            background-image: url('https://img.freepik.com/fotos-gratis/delicioso-arranjo-de-grupos-de-comida_23-2149235816.jpg?size=626&ext=jpg&ga=GA1.1.1819120589.1727481600&semt=ais_hybrid');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            overflow: hidden;
+            animation: parallax 10s infinite linear;
+        }
+    
+        @keyframes parallax {
+            0% { background-position: center; }
+            50% { background-position: top; }
+            100% { background-position: center; }
+        }
+    
+        .banner-content {
+            z-index: 1;
+            max-width: 800px;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 3.5em;
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            font-weight: bold;
+            opacity: 0; /* Oculto inicialmente */
+            animation: fade-in 1s forwards 0.5s; /* Efeito de fade-in */
+        }
+        p {
+            font-size: 1.5em;
+            margin: 10px 0;
+            font-family: 'Arial', sans-serif;
+            opacity: 0; /* Oculto inicialmente */
+            animation: fade-in 1s forwards 1s; /* Efeito de fade-in */
+        }
+        .description {
+            max-width: 600px;
+            font-size: 1.2em;
+            line-height: 1.5;
+            opacity: 0; /* Oculto inicialmente */
+            animation: fade-in 1s forwards 1.5s; /* Efeito de fade-in */
+        }
+        .cta-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 15px 30px;
+            background-color: #FFCC00;
+            color: #333;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 1.2em;
+            transition: background-color 0.3s;
+            opacity: 0; /* Oculto inicialmente */
+            animation: fade-in 1s forwards 2s; /* Efeito de fade-in */
+        }
+        .cta-button:hover {
+            background-color: #FFD700;
+        }
+    
+        @keyframes fade-in {
+            to {
+                opacity: 1; /* Finaliza com opacidade total */
+            }
+        }
+        .cont{
+            background-color: rgb(65, 108, 164);
+            width: 100%;
+        }
+        
+        .carousel-container {
+        position: relative;
+        width: 600px;
+        margin: auto;
+        overflow: hidden;
+        border: 2px solid #ddd;
+        border-radius: 10px;
+    }
+
+    .carousel {
+        display: flex;
+
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .carousel-slide {
+        min-width: 600px;
+    
+        box-sizing: border-box;
+    }
+
+    img {
+        width: 600px;
+        height: auto;
+    }
+
+    button {
+        position: absolute;
+        top: 50%;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        transform: translateY(-50%);
+    }
+
+
+    .prev {
+        left: 10px; /* Botão anterior */
+    }
+
+    .next {
+        right: 10px; /* Botão próximo */
+    }
+    .overlay-text{
+        position: absolute;
+        font-size:50px;
+        top:0%;
+        left:50%;
+        transform: translate(-50%, 50%);
+        color:white;
+        font-size:24px;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    }
+    #clock{
+        margin-top:10px;
+    }
+    </style>
+
+
+</head>
+<body>
+    <div class="cont">
+<div class="carousel-container">
+    <div class="carousel">
+        
+        <div class="carousel-slide">
+            <img src= "img2.png">
+    </div>
+        <div class="carousel-slide">
+            <img src="carnemoida2.jpg">
+        </div>
+
+        <div class="carousel-slide">
+            <img src="caviar2.png">
+        </div>
+    </div>
+    </div>
+</div>
+
+</div>
+<script>
+    let currentSlide = 0;
+    function moveSlide(direction){
+        const slides = document.querySelectorAll('.carousel-slide');
+        const totalSlides = slides.length;
+        currentSlide += direction;
+        if(currentSlide < 0){
+            currentSlide = 0;
+
+        }else if(currentSlide > totalSlides - 1){
+            currentSlide = 0;
+        }
+        document.querySelector('.carousel').style.transform = `translateX(-${currentSlide * 100}%)`;
+    }
+
+    document.addEventListener('keydown', (event) => {
+        if(event.key === 'ArrowLeft'){
+            moveSlide(-1);
+        }else if(event.key === 'ArrowRight'){
+            moveSlide(1);
+        }
+
+        
+    });
+</script>
+
+
+<section id="home">
+
+    <h3>A missão da nossa empressa</h3>
+
+    <h4>Nossa missão é oferecer alimentos que não apenas atendam às necessidades nutricionais,
+         mas também proporcionem experiências de sabor únicos e prazerosas, 
+        sempre com foco na qualidade e no bem-estar de nossos clientes.
+        Trabalhamos com um compromisso inabalável de selecionar ingredientes de origem sustentável,
+         garantir processos de produção éticos e inovar continuamente para desenvolver produtos que respeitem a saúde e o meio ambiente. 
+         Além disso, buscamos criar valor para nossos colaboradores, parceiros e comunidade, 
+         promovendo uma cultura de responsabilidade social e ambiental. </h4>
+        
+         <h3>A visão da nossa empresa</h3>
+    
+         <h4>
+            Nossa visão é ser reconhecida globalmente como uma referência em alimentos saudáveis, sustentáveis ​​e 
+         inovadores. Almejamos ser líderes na transformação dos hábitos alimentares, inspirando escolhas conscientes 
+         e contribuindo para um futuro em que a alimentação saudável e sustentável seja acessível a todos. 
+         Acreditamos em um mundo onde a indústria alimentar é uma força positiva 
+         para a saúde das pessoas e para o planeta, 
+         promovendo a longevidade e o bem-estar em harmonia com a preservação dos recursos naturais.    </h4>
+        
+</section>
+<footer>
+    <p>&copy; 2024 Temperos da Vida. Todos os direitos reservados.</p>
+</footer>
+</body>
+</html>

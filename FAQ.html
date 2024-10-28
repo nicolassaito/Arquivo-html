@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperos da Vida</title>
+
+    <link rel="stylesheet" href="estolilou.css">
+    <link rel="website icon" type="png" href="apple.png"> 
+</head>
+<body>
+
+    <header>
+        <h1>Temperos da Vida</h1><br></br>
+        <nav>
+            <ul>
+                <li><a href="home.html" class="dropdown-item">Home</a></li>
+                <li><a href="sobre_nos.html" class="dropdown-item">Sobre Nós</a></li>
+                <li><a href="produtos.html" class="dropdown-item">Produtos</a></li>
+                <li><a href="receitas.html" class="dropdown-item">Receitas</a></li>
+                <li><a href="sustentabilidade" class="dropdown-item">Sustentabilidade </a></li>
+                <li><a href="contato.html" class="dropdown-item">Contato</a></li>
+                <li><a href="cliente.html" class="dropdown-item">Área do Cliente</a></li>
+                <li><a href="faq.html" class="dropdown-item">FAQ</a></li>
+            </ul>
+        </nav>
+        </header>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 10px;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .faq-section {
+            max-width: 100%;
+            margin: auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        .faq-item {
+            margin-bottom: 15px;
+            border-bottom: 1px solid #e0e0e0;
+            padding-bottom: 10px;
+        }
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+        .question {
+            font-weight: bold;
+            cursor: pointer;
+            color: #007bff;
+        }
+        .answer {
+            display:none;
+            margin-top: 10px;
+            color: #555;
+            font-size: 17px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="faq-section">
+    <h1>Perguntas Frequentes</h1>
+
+    <div class="faq-item">
+        <div class="question" onclick="toggleAnswer(this)">1. Como armazenar a carne adequadamente?</div>
+        <div class="answer">A carne deve ser mantida na parte mais fria da geladeira, em sua embalagem original ou em um recipiente hermético. Para longos períodos, recomenda-se congelar.</div>
+    </div>
+
+    <div class="faq-item">
+        <div class="question" onclick="toggleAnswer(this)">2. Qual é a diferença entre carne bovina e suína?</div>
+        <div class="answer">A carne bovina vem de gado, enquanto a carne suína vem de porcos. Elas têm diferentes perfis de sabor, textura e métodos de preparo.</div>
+    </div>
+
+    <div class="faq-item">
+        <div class="question" onclick="toggleAnswer(this)">3. Como saber se a carne está fresca?</div>
+        <div class="answer">A carne fresca deve ter uma cor vibrante, um cheiro neutro e a superfície deve estar úmida, mas não pegajosa.</div>
+    </div>
+
+    <div class="faq-item">
+        <div class="question" onclick="toggleAnswer(this)">4. O que significa a data de validade nos produtos lácteos?</div>
+        <div class="answer">A data de validade indica até quando o produto deve ser consumido para garantir qualidade e segurança.</div>
+    </div>
+
+    <div class="faq-item">
+        <div class="question" onclick="toggleAnswer(this)">5. Quais são os benefícios do consumo de laticínios?</div>
+        <div class="answer">Os laticínios são fontes ricas de cálcio, proteínas e vitaminas, essenciais para a saúde óssea e muscular.</div>
+    </div>
+
+    <div class="faq-item">
+        <div class="question" onclick="toggleAnswer(this)">6. Como armazenar queijo corretamente?</div>
+        <div class="answer">O queijo deve ser armazenado na geladeira, envolto em papel manteiga ou filme plástico. Alguns queijos podem ser congelados, mas a textura pode mudar.</div>
+    </div>
+
+    <div class="faq-item">
+        <div class="question" onclick="toggleAnswer(this)">7. Qual é a melhor forma de lavar verduras?</div>
+        <div class="answer">As verduras devem ser lavadas em água corrente e, se possível, com uma escovinha para remover impurezas.</div>
+    </div>
+
+    <div class="faq-item">
+        <div class="question" onclick="toggleAnswer(this)">8. Como conservar verduras por mais tempo?</div>
+        <div class="answer">Armazenar as verduras em sacos plásticos ou recipientes herméticos na geladeira ajuda a manter a frescura.</div>
+    </div>
+
+    <div class="faq-item">
+        <div class="question" onclick="toggleAnswer(this)">9. Quais verduras são mais nutritivas?</div>
+        <div class="answer">Verduras como espinafre, couve, brócolis e rúcula são ricas em nutrientes e oferecem diversos benefícios à saúde.</div>
+    </div>
+
+</div>
+
+<script>
+    function toggleAnswer(element) {
+        const answer = element.nextElementSibling;
+        answer.style.display = answer.style.display === 'none' || answer.style.display === '' ? 'block' : 'none';
+    }
+</script>
+
+<footer>
+    <p>&copy; 2024 Temperos da Vida. Todos os direitos reservados.</p>
+</footer>
+</body>
+</html>

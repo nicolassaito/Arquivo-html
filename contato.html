@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperos da Vida</title>
+
+    <link rel="stylesheet" href="estolilou.css">
+    <link rel="website icon" type="png" href="apple.png"> 
+</head>
+<body>
+
+    <header>
+        <h1>Temperos da Vida</h1><br></br>
+        <nav>
+            <ul>
+                <li><a href="home.html" class="dropdown-item">Home</a></li>
+                <li><a href="sobre_nos.html" class="dropdown-item">Sobre Nós</a></li>
+                <li><a href="produtos.html" class="dropdown-item">Produtos</a></li>
+                <li><a href="receitas.html" class="dropdown-item">Receitas</a></li>
+                <li><a href="sustentabilidade" class="dropdown-item">Sustentabilidade </a></li>
+                <li><a href="contato.html" class="dropdown-item">Contato</a></li>
+                <li><a href="cliente.html" class="dropdown-item">Área do Cliente</a></li>
+                <li><a href="faq.html" class="dropdown-item">FAQ</a></li>
+            </ul>
+        </nav>
+        </header>
+    
+    <style>
+        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: #f9f9f9;
+        }
+        
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            align-items: center;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 700px;
+            margin-left: 20%;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block; /* Faz a label ocupar toda a largura */
+            margin-bottom: 15px; /* Espaço entre a label e o campo */
+        }
+        input {
+            padding: 10px;
+            border: 1px solid #ccc;
+            width: 100%;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+            transition: border-color 0.3s;
+        }
+        input:focus {
+            border-color: green;
+        }
+        button {
+            padding: 10px;
+            border-radius: 3px;
+            background-color: rgb(163, 19, 19);
+            color: white;
+            cursor: pointer;
+            align-items: center;
+            margin-top: 25px;
+            width: 150px;
+            height: 50px;
+            font-size: 30px; 
+        }
+        button:hover {
+            background-color: black;
+        }
+        .rating {
+            display: flex;
+            justify-content: center;
+            margin: 10px 0;
+        }
+        .star {
+            font-size: 30px;
+            cursor: pointer;
+            color: #ccc;
+            transition: color 0.2s;
+        }
+        .star.checked {
+            color: gold;
+        }
+        .map {
+            width: 100%;
+            height: 300px;
+            margin: 20px 0;
+        }
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            margin-top: 200px;
+        }
+        .social-icons img {
+            width: 40px;
+            height: 40px;
+            transition: transform 0.3s;
+        }
+        .social-icons img:hover {
+            transform: scale(1.1);
+        }
+        .rating-text {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 18px;
+        }
+        .pa{
+            margin-top: 120px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Contato - Tempero da Vida</h1>
+        </header>
+
+        <form id="contactForm" action="https://formsubmit.co/mateus.sesi22@gmail.com" method="post">  
+            <div class="form-group">
+                <label for="username">Nome</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Telefone</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label>Dúvidas e Sugestões</label>
+                <input type="text" id="suggestions" name="suggestions" required>
+            </div>
+            <div class="form-group">
+                <label>Avaliação</label>
+                <div class="rating" id="rating">
+                    <span class="star" data-value="1">★</span>
+                    <span class="star" data-value="2">★</span>
+                    <span class="star" data-value="3">★</span>
+                    <span class="star" data-value="4">★</span>
+                    <span class="star" data-value="5">★</span>
+                </div>
+                <input type="hidden" id="starRating" name="starRating" required>
+                <div class="rating-text" id="ratingText">Avalie o serviço</div>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+
+       
+        <div class="map">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.649743590715!2d-46.837792624686855!3d-22.99990387918968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf2a8f5f481107%3A0x74bef02f89d3cf2!2sEscola%20Senai%20Luiz%20Scavone!5e0!3m2!1spt-BR!2sbr!4v1727897786261!5m2!1spt-BR!2sbr" 
+                width="100%" 
+                height="400" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    <p class="pa">
+        R. Alfredo Massareti, 191 - Lot. Rei de Ouro, Itatiba - SP, 13251-360
+    </p>
+    
+            
+
+        <div class="social-icons">
+            <a href="https://facebook.com" target="_blank">
+                <img class="social" src="https://cdn-icons-png.flaticon.com/512/5968/5968764.png" alt="Facebook">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img class="social" src="https://cdn.icon-icons.com/icons2/914/PNG/512/Instagram_Color_icon-icons.com_71811.png" alt="Instagram">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img class="social" src="https://cdn-icons-png.flaticon.com/256/124/124021.png" alt="Twitter">
+            </a>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Temperos da Vida. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        const stars = document.querySelectorAll('.star');
+        const starRatingInput = document.getElementById('starRating');
+        const ratingText = document.getElementById('ratingText');
+
+        stars.forEach(star => {
+            star.addEventListener('click', () => {
+                const value = star.getAttribute('data-value');
+                stars.forEach(s => s.classList.remove('checked'));
+                for (let i = 0; i < value; i++) {
+                    stars[i].classList.add('checked');
+                }
+                starRatingInput.value = value; // Armazena a avaliação no campo oculto
+
+                // Atualiza o texto da avaliação
+                ratingText.innerText = `Você avaliou com ${value} estrela${value > 1 ? 's' : ''}`;
+            });
+        });
+    </script>
+</body>
+</html>
